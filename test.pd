@@ -1,4 +1,4 @@
-#N canvas 0 25 1026 861 12;
+#N canvas 0 25 1026 864 12;
 #X obj 472 310 tonality_printer;
 #X obj 528 238 tonality;
 #X obj 655 240 degree_gen;
@@ -12,6 +12,9 @@
 #X text 528 80 start;
 #X text 718 80 stop;
 #X obj 581 400 chord_notes;
+#X obj 800 108 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X text 800 80 reset;
 #X connect 1 0 0 0;
 #X connect 1 0 10 0;
 #X connect 1 1 0 1;
@@ -26,3 +29,4 @@
 #X connect 5 0 10 1;
 #X connect 7 0 4 1;
 #X connect 10 0 6 0;
+#X connect 11 0 4 2;
