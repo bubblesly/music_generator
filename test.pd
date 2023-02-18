@@ -1,4 +1,4 @@
-#N canvas 0 25 764 867 12;
+#N canvas 0 25 764 870 12;
 #X obj 364 499 tonality_printer;
 #X obj 364 397 tonality;
 #X obj 209 329 degree_gen;
@@ -17,6 +17,8 @@
 #X text 479 70 reset;
 #X obj 207 137 t b b b b;
 #X obj 209 399 t f f;
+#X obj 280 610 s chords;
+#X obj 380 681 play_chords;
 #X connect 1 0 0 0;
 #X connect 1 0 10 2;
 #X connect 1 1 0 1;
@@ -27,6 +29,7 @@
 #X connect 5 0 10 0;
 #X connect 7 0 4 1;
 #X connect 10 0 6 0;
+#X connect 10 0 15 0;
 #X connect 11 0 4 2;
 #X connect 13 0 4 0;
 #X connect 13 1 2 2;
