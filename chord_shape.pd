@@ -1,6 +1,6 @@
-#N canvas 164 47 1383 965 12;
+#N canvas 231 533 1383 968 12;
 #X obj 409 122 inlet;
-#X obj 784 128 inlet;
+#X obj 784 122 inlet;
 #X obj 538 269 +;
 #X obj 320 490 pack 4 7 11;
 #X obj 489 378 select 0 1 2 3 4 5 6;
@@ -9,6 +9,8 @@
 #X obj 755 490 pack 3 6 10;
 #X obj 560 660 outlet;
 #X obj 538 320 mod 7;
+#X text 410 90 degree;
+#X text 780 90 mode;
 #X connect 0 0 2 0;
 #X connect 1 0 2 1;
 #X connect 2 0 9 0;
