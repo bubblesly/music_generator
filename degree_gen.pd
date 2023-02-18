@@ -1,4 +1,4 @@
-#N canvas 1027 25 765 651 12;
+#N canvas 765 101 1117 826 12;
 #X obj 320 320 + 1;
 #X obj 280 217 until;
 #X obj 280 320 f;
@@ -6,17 +6,17 @@
 #X floatatom 360 184 5 0 0 0 - - -, f 5;
 #N canvas 671 217 450 303 (subpatch) 0;
 #X array sequence 100 float 3 black black;
-#A 0 5 5 5 5 1 1 1 1 2 2 2 2 0 0 0 0 3 3 3 3 6 6 6 6 3 3 3 3 0 0 0
-0 1 1 1 1 5 5 5 5 2 2 2 2 6 6 6 6 4 4 4 4 6 6 6 6 6 6 6 6 4 4 4 4 2
-2 2 2 3 3 3 3 5 5 5 5 4 4 4 4 5 5 5 5 2 2 2 2 2 2 2 2 4 4 4 4 1 1 1
-1;
+#A 0 6 6 6 6 6 6 6 6 3 3 3 3 3 3 3 3 5 5 5 5 4 4 4 4 3 3 3 3 1 1 1
+1 4 4 4 4 3 3 3 3 3 3 3 3 6 6 6 6 2 2 2 2 6 6 6 6 6 6 6 6 4 4 4 4 5
+5 5 5 6 6 6 6 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 1 1 1 1 6 6 6 6 4 4 4
+4;
 #X coords 0 7 100 0 200 140 1;
 #X restore 30 30 graph;
 #X obj 280 562 tabwrite sequence;
-#X obj 110 370 mod 4;
-#X obj 110 440 random 7;
-#X obj 110 400 select 0;
-#X obj 366 83 inlet;
+#X obj 440 430 mod 4;
+#X obj 440 500 random 7;
+#X obj 440 460 select 0;
+#X obj 280 83 inlet;
 #X obj 460 83 inlet;
 #X obj 500 184 + 1;
 #X obj 460 184 f;
@@ -24,26 +24,25 @@
 #X msg 550 130 0;
 #X obj 500 217 mod 100;
 #X obj 460 314 tabread sequence;
-#X text 350 50 generate;
+#X text 264 50 generate;
 #X text 460 50 metronome;
 #X text 550 50 restart;
 #X obj 460 363 outlet;
-#X obj 280 472 float;
-#X msg 280 440 bang;
+#X obj 280 522 float;
+#X msg 280 490 bang;
 #X msg 460 130 bang;
+#X obj 280 130 t b b;
+#X obj 280 370 t f f f;
 #X connect 0 0 2 1;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
-#X connect 2 0 7 0;
-#X connect 2 0 6 1;
-#X connect 2 0 23 0;
+#X connect 2 0 26 0;
 #X connect 3 0 1 0;
 #X connect 4 0 2 1;
 #X connect 7 0 9 0;
 #X connect 8 0 22 1;
 #X connect 9 0 8 0;
-#X connect 10 0 3 0;
-#X connect 10 0 4 0;
+#X connect 10 0 25 0;
 #X connect 11 0 24 0;
 #X connect 12 0 16 0;
 #X connect 13 0 12 0;
@@ -55,3 +54,8 @@
 #X connect 22 0 6 0;
 #X connect 23 0 22 0;
 #X connect 24 0 13 0;
+#X connect 25 0 3 0;
+#X connect 25 1 4 0;
+#X connect 26 0 23 0;
+#X connect 26 1 7 0;
+#X connect 26 2 6 1;
