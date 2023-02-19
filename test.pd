@@ -1,39 +1,39 @@
-#N canvas 0 25 764 870 12;
-#X obj 364 499 tonality_printer;
-#X obj 364 397 tonality;
+#N canvas 578 123 764 870 12;
+#X obj 330 452 tonality_printer;
+#X obj 330 350 tonality;
 #X obj 209 329 degree_gen;
-#X obj 207 98 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 153 98 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
-#X obj 209 270 metronome;
 #X obj 209 499 chord_shape;
 #X obj 209 610 print;
-#X obj 397 98 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 250 98 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
-#X text 207 70 start;
-#X text 397 70 stop;
+#X text 153 70 start;
+#X text 250 70 stop;
 #X obj 209 560 chord_notes;
-#X obj 479 98 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 332 98 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
-#X text 479 70 reset;
-#X obj 207 137 t b b b b;
+#X text 332 70 reset;
+#X obj 153 137 t b b b b;
 #X obj 209 399 t f f;
 #X obj 280 610 s chords;
 #X obj 380 681 play_chords;
+#X obj 153 240 metronome2;
 #X connect 1 0 0 0;
-#X connect 1 0 10 2;
+#X connect 1 0 9 2;
 #X connect 1 1 0 1;
-#X connect 1 1 5 1;
-#X connect 2 0 14 0;
-#X connect 3 0 13 0;
-#X connect 4 0 2 0;
-#X connect 5 0 10 0;
-#X connect 7 0 4 1;
-#X connect 10 0 6 0;
-#X connect 10 0 15 0;
-#X connect 11 0 4 2;
+#X connect 1 1 4 1;
+#X connect 2 0 13 0;
+#X connect 3 0 12 0;
+#X connect 4 0 9 0;
+#X connect 6 0 16 1;
+#X connect 9 0 5 0;
+#X connect 9 0 14 0;
+#X connect 10 0 16 2;
+#X connect 12 0 16 0;
+#X connect 12 1 2 2;
+#X connect 12 2 2 1;
+#X connect 12 3 1 0;
 #X connect 13 0 4 0;
-#X connect 13 1 2 2;
-#X connect 13 2 2 1;
-#X connect 13 3 1 0;
-#X connect 14 0 5 0;
-#X connect 14 1 10 1;
+#X connect 13 1 9 1;
+#X connect 16 2 2 0;
