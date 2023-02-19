@@ -1,0 +1,12 @@
+#N canvas 0 25 250 324 12;
+#X obj 110 80 + 60;
+#X obj 110 110 mtof;
+#X floatatom 40 150 5 0 0 0 - - -, f 5;
+#X obj 110 150 osc~;
+#X obj 110 40 inlet;
+#X obj 110 220 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 0 0;
