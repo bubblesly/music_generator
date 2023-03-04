@@ -1,0 +1,23 @@
+#N canvas 227 179 450 300 12;
+#X obj 60 90 metronome2;
+#X floatatom 214 180 5 0 0 0 - - -, f 5;
+#X floatatom 170 180 5 0 0 0 - - -, f 5;
+#X obj 10 210 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X floatatom 110 200 5 0 0 0 - - -, f 5;
+#X floatatom 60 200 5 0 0 0 - - -, f 5;
+#X msg 160 210 bang;
+#X obj 160 240 print quarter;
+#X obj 230 90 r s4;
+#X floatatom 230 120 5 0 0 0 - - -, f 5;
+#X obj 290 90 r s8;
+#X floatatom 290 120 5 0 0 0 - - -, f 5;
+#X connect 0 0 3 0;
+#X connect 0 1 5 0;
+#X connect 0 2 4 0;
+#X connect 0 2 6 0;
+#X connect 0 3 2 0;
+#X connect 0 4 1 0;
+#X connect 6 0 7 0;
+#X connect 8 0 9 0;
+#X connect 10 0 11 0;
