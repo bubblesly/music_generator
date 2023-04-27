@@ -1,13 +1,14 @@
 #N canvas 765 25 638 870 12;
 #X obj 164 20 r chords;
 #X obj 164 76 unpack f f f;
-#X floatatom 264 140 5 0 0 0 - - -, f 5;
+#X floatatom 264 140 5 0 0 0 - - - 0;
 #X obj 164 260 mixer;
 #X obj 164 140 simple_voice;
-#X floatatom 414 140 5 0 0 0 - - -, f 5;
+#X floatatom 414 140 5 0 0 0 - - - 0;
 #X obj 314 140 simple_voice;
-#X floatatom 564 140 5 0 0 0 - - -, f 5;
+#X floatatom 564 140 5 0 0 0 - - - 0;
 #X obj 464 140 simple_voice;
+#X obj 164 312 outlet~;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 0 4 0;
@@ -15,6 +16,7 @@
 #X connect 1 1 5 0;
 #X connect 1 2 8 0;
 #X connect 1 2 7 0;
+#X connect 3 0 9 0;
 #X connect 4 0 3 0;
 #X connect 6 0 3 1;
 #X connect 8 0 3 2;
