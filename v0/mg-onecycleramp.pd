@@ -1,0 +1,16 @@
+#N canvas 1419 361 450 300 12;
+#X obj 68 122 /;
+#X floatatom 125 187 12 0 0 0 - - - 16;
+#X obj 65 202 * 127;
+#X obj 64 246 outlet;
+#X obj 141 77 r ci16;
+#X obj 43 16 r mi2;
+#X obj 43 48 bang;
+#X obj 43 77 value cn16;
+#X connect 0 0 1 0 empty;
+#X connect 0 0 2 0 empty;
+#X connect 2 0 3 0 empty;
+#X connect 4 0 0 0 empty;
+#X connect 5 0 6 0 empty;
+#X connect 6 0 7 0 empty;
+#X connect 7 0 0 1 empty;

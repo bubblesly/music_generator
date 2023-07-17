@@ -1,0 +1,17 @@
+#N canvas 1041 364 493 260 12;
+#X obj 90 31 inlet;
+#X obj 90 210 outlet;
+#X obj 90 110 / 2;
+#X obj 90 160 spigot;
+#X obj 90 70 t f f;
+#X obj 154 100 mod 2;
+#X obj 154 130 == 0;
+#X text 210 30 Divide by two a incoming number \, and let it pass only
+if the inlet was even, f 33;
+#X connect 0 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
+#X connect 4 1 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 3 1;
