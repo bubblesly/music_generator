@@ -16,10 +16,10 @@
 #X obj 740 410 mg-playbass;
 #X obj 202 359 mg-eucli 7 4;
 #X obj 202 433 mg-hihat 10000 10;
-#X obj 202 225 mg-kickdel 150 30 50;
+#X obj 202 226 mg-kickdel 150 30 50;
 #X obj 337 433 mg-pulse;
 #X msg 884 191 vol \$1;
-#X obj 884 153 r prechange;
+#X obj 834 82 r prechange;
 #X obj 733 226 mg-snare 1000 2000 200 20;
 #X floatatom 834 191 5 0 0 0 empty - - 12;
 #X obj 565 399 catch~ L;
